@@ -1,5 +1,5 @@
 name: protptype_1
-description: "A new Flutter project."
+description: 'A new Flutter project.'
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -31,10 +31,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  flutter_screenutil: ^5.9.3
+  syncfusion_flutter_charts: ^26.1.38
 
 dev_dependencies:
   flutter_test:
@@ -54,15 +55,14 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -77,53 +77,135 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Gilroy
+    - family: GilroyBlack
       fonts:
         - asset: assets/fonts/Gilroy-Black.ttf
           weight: 900
+    - family: GilroyBlackItalic
+      fonts:
         - asset: assets/fonts/Gilroy-BlackItalic.ttf
           weight: 900
           style: italic
+    - family: GilroyExtraBold
+      fonts:
         - asset: assets/fonts/Gilroy-ExtraBold.ttf
           weight: 800
+    - family: GilroyExtraBoldItalic
+      fonts:
         - asset: assets/fonts/Gilroy-ExtraBoldItalic.ttf
           weight: 800
           style: italic
+    - family: GilroyBold
+      fonts:
         - asset: assets/fonts/Gilroy-Bold.ttf
           weight: 700
+    - family: GilroyBoldItalic
+      fonts:
         - asset: assets/fonts/Gilroy-BoldItalic.ttf
           weight: 700
           style: italic
+    - family: GilroySemiBold
+      fonts:
         - asset: assets/fonts/Gilroy-SemiBold.ttf
           weight: 600
+    - family: GilroySemiBoldItalic
+      fonts:
         - asset: assets/fonts/Gilroy-SemiBoldItalic.ttf
           weight: 600
           style: italic
+    - family: GilroyMedium
+      fonts:
         - asset: assets/fonts/Gilroy-Medium.ttf
           weight: 500
+    - family: GilroyMediumItalic
+      fonts:
         - asset: assets/fonts/Gilroy-MediumItalic.ttf
           weight: 500
           style: italic
+    - family: GilroyRegular
+      fonts:
         - asset: assets/fonts/Gilroy-Regular.ttf
           weight: 400
+    - family: GilroyRegularItalic
+      fonts:
         - asset: assets/fonts/Gilroy-RegularItalic.ttf
           weight: 400
           style: italic
+    - family: GilroyLight
+      fonts:
         - asset: assets/fonts/Gilroy-Light.ttf
           weight: 300
+    - family: GilroyLightItalic
+      fonts:
         - asset: assets/fonts/Gilroy-LightItalic.ttf
           weight: 300
           style: italic
+    - family: GilroyUltraLight
+      fonts:
         - asset: assets/fonts/Gilroy-UltraLight.ttf
           weight: 200
+    - family: GilroyUltraLightItalic
+      fonts:
         - asset: assets/fonts/Gilroy-UltraLightItalic.ttf
           weight: 200
           style: italic
+    - family: GilroyThin
+      fonts:
         - asset: assets/fonts/Gilroy-Thin.ttf
           weight: 100
+    - family: GilroyThinItalic
+      fonts:
         - asset: assets/fonts/Gilroy-ThinItalic.ttf
           weight: 100
           style: italic
+    
+    # - family: Gilroy
+    #   fonts:
+    #     - asset: assets/fonts/Gilroy-Black.ttf
+    #       weight: 900
+    #     - asset: assets/fonts/Gilroy-BlackItalic.ttf
+    #       weight: 900
+    #       style: italic
+    #     - asset: assets/fonts/Gilroy-ExtraBold.ttf
+    #       weight: 800
+    #     - asset: assets/fonts/Gilroy-ExtraBoldItalic.ttf
+    #       weight: 800
+    #       style: italic
+    #     - asset: assets/fonts/Gilroy-Bold.ttf
+    #       weight: 700
+    #     - asset: assets/fonts/Gilroy-BoldItalic.ttf
+    #       weight: 700
+    #       style: italic
+    #     - asset: assets/fonts/Gilroy-SemiBold.ttf
+    #       weight: 600
+    #     - asset: assets/fonts/Gilroy-SemiBoldItalic.ttf
+    #       weight: 600
+    #       style: italic
+    #     - asset: assets/fonts/Gilroy-Medium.ttf
+    #       weight: 500
+    #     - asset: assets/fonts/Gilroy-MediumItalic.ttf
+    #       weight: 500
+    #       style: italic
+    #     - asset: assets/fonts/Gilroy-Regular.ttf
+    #       weight: 400
+    #     - asset: assets/fonts/Gilroy-RegularItalic.ttf
+    #       weight: 400
+    #       style: italic
+    #     - asset: assets/fonts/Gilroy-Light.ttf
+    #       weight: 300
+    #     - asset: assets/fonts/Gilroy-LightItalic.ttf
+    #       weight: 300
+    #       style: italic
+    #     - asset: assets/fonts/Gilroy-UltraLight.ttf
+    #       weight: 200
+    #     - asset: assets/fonts/Gilroy-UltraLightItalic.ttf
+    #       weight: 200
+    #       style: italic
+    #     - asset: assets/fonts/Gilroy-Thin.ttf
+    #       weight: 100
+    #     - asset: assets/fonts/Gilroy-ThinItalic.ttf
+    #       weight: 100
+    #       style: italic
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
