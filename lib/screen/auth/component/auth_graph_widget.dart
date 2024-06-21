@@ -44,7 +44,7 @@ class AuthGraphWidget extends StatelessWidget {
               enableAxisAnimation: false,
               series: <CartesianSeries>[
                 SplineAreaSeries<ChartData, int>(
-                  animationDuration: 0,
+                  animationDuration: 1000,
                   dataSource: chartData,
                   xValueMapper: (ChartData data, _) => data.x,
                   yValueMapper: (ChartData data, _) => data.y,
@@ -59,7 +59,7 @@ class AuthGraphWidget extends StatelessWidget {
                   ),
                 ),
                 SplineAreaSeries<ChartData, int>(
-                  animationDuration: 0,
+                  animationDuration: 1000,
                   dataSource: chartData,
                   xValueMapper: (ChartData data, _) => data.x,
                   yValueMapper: (ChartData data, _) => data.y1,
