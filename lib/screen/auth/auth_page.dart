@@ -6,6 +6,7 @@ import 'package:protptype_1/component/animation/fade_in_widget.dart';
 import 'package:protptype_1/component/animation/slide_in_widget.dart';
 import 'package:protptype_1/gen/assets.gen.dart';
 import 'package:protptype_1/screen/auth/component/auth_graph_widget.dart';
+import 'package:protptype_1/screen/dashboard/dashboard_page.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
@@ -58,7 +59,10 @@ class AuthPage extends StatelessWidget {
                     backgroundColor: AppColors.blurDress,
                     foregroundColor: Colors.white,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const DashboardPage()));
+                  },
                   child: const Text('Log In'),
                 ),
               ),

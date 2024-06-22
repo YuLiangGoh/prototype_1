@@ -37,6 +37,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   syncfusion_flutter_charts: ^26.1.38
   flutter_hooks: ^0.20.5
+  multi_circular_slider: ^1.1.0
 
 dev_dependencies:
   flutter_test:
